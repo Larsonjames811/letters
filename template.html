@@ -119,9 +119,10 @@
     var SLUG = "{{SLUG}}";
     var TRACKER = "{{TRACKER_URL}}";
     function ping(event) {
-      new Image().src = TRACKER + "?prospect=" + encodeURIComponent(SLUG)
+      fetch(TRACKER + "?prospect=" + encodeURIComponent(SLUG)
         + "&event=" + encodeURIComponent(event)
-        + "&t=" + Date.now();
+        + "&t=" + Date.now(),
+        { method: "GET", keepalive: true, mode: "no-cors" });
     }
     ping("view");
     var cta = document.getElementById("cta");

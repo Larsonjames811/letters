@@ -110,9 +110,10 @@
     var SLUG = "james-test";
     var TRACKER = "https://script.google.com/macros/s/AKfycbwelusD6fC4mhTzBsYDjvoUNokgc2pKGtKoA8VLv3eeKhIgi6g5WR121YJ4R8bwpn1bfg/exec";
     function ping(event) {
-      new Image().src = TRACKER + "?prospect=" + encodeURIComponent(SLUG)
+      fetch(TRACKER + "?prospect=" + encodeURIComponent(SLUG)
         + "&event=" + encodeURIComponent(event)
-        + "&t=" + Date.now();
+        + "&t=" + Date.now(),
+        { method: "GET", keepalive: true, mode: "no-cors" });
     }
     ping("view");
     var cta = document.getElementById("cta");
