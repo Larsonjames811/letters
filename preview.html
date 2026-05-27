@@ -130,6 +130,57 @@ h1 .accent{color:var(--blue);}
 .cta-row span{display:inline-flex;align-items:center;gap:6px;}
 .check{color:var(--green);font-weight:800;}
 
+/* FOUNDER CARD (under CTA) */
+.founder-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:16px;
+  background:var(--off);
+  border:1px solid var(--border);
+  border-radius:12px;
+  margin-bottom:28px;
+  text-decoration:none;
+  color:inherit;
+  transition:background 0.15s, border-color 0.15s;
+}
+.founder-card:hover{
+  background:#f3f4f6;
+  border-color:#d1d5db;
+}
+.founder-img{
+  width:54px;height:54px;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center 25%;
+  border:2px solid var(--white);
+  box-shadow:0 1px 3px rgba(0,0,0,0.08);
+  flex-shrink:0;
+}
+.founder-text{flex:1;min-width:0;}
+.founder-name{
+  font-size:0.95rem;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:2px;
+  letter-spacing:-0.01em;
+}
+.founder-tagline{
+  font-size:0.82rem;
+  color:var(--muted);
+  line-height:1.45;
+}
+.founder-linkedin{
+  font-size:0.78rem;
+  font-weight:700;
+  color:var(--blue);
+  background:var(--light-blue);
+  padding:5px 10px;
+  border-radius:6px;
+  letter-spacing:0.02em;
+  flex-shrink:0;
+}
+
 /* TRUSTED BY STRIP */
 .trusted{
   padding:18px 0 24px;
@@ -425,6 +476,15 @@ footer{
         <span><span class="check">✓</span> No commitment</span>
       </div>
     </div>
+
+    <a href="https://www.linkedin.com/in/jameswlarson1/" target="_blank" rel="noopener" class="founder-card">
+      <img src="https://i.imgur.com/KCMgg6k.jpeg" alt="James Larson" class="founder-img">
+      <div class="founder-text">
+        <div class="founder-name">James Larson</div>
+        <div class="founder-tagline">Founder, Aventra AI · Provo, Utah</div>
+      </div>
+      <span class="founder-linkedin">in →</span>
+    </a>
 
     <div class="trusted">
       <div class="trusted-label">Currently running automations for:</div>
