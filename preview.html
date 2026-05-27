@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Halverson Insurance Group — Aventra Assessment</title>
+<title>Halverson Insurance Group — Aventra AI Assessment</title>
 
 <link rel="icon" type="image/png" href="https://aventra-ai.com/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,57 +130,6 @@ h1 .accent{color:var(--blue);}
 .cta-row span{display:inline-flex;align-items:center;gap:6px;}
 .check{color:var(--green);font-weight:800;}
 
-/* FOUNDER CARD (under CTA) */
-.founder-card{
-  display:flex;
-  align-items:center;
-  gap:14px;
-  padding:16px;
-  background:var(--off);
-  border:1px solid var(--border);
-  border-radius:12px;
-  margin-bottom:28px;
-  text-decoration:none;
-  color:inherit;
-  transition:background 0.15s, border-color 0.15s;
-}
-.founder-card:hover{
-  background:#f3f4f6;
-  border-color:#d1d5db;
-}
-.founder-img{
-  width:54px;height:54px;
-  border-radius:50%;
-  object-fit:cover;
-  object-position:center 25%;
-  border:2px solid var(--white);
-  box-shadow:0 1px 3px rgba(0,0,0,0.08);
-  flex-shrink:0;
-}
-.founder-text{flex:1;min-width:0;}
-.founder-name{
-  font-size:0.95rem;
-  font-weight:700;
-  color:var(--navy);
-  margin-bottom:2px;
-  letter-spacing:-0.01em;
-}
-.founder-tagline{
-  font-size:0.82rem;
-  color:var(--muted);
-  line-height:1.45;
-}
-.founder-linkedin{
-  font-size:0.78rem;
-  font-weight:700;
-  color:var(--blue);
-  background:var(--light-blue);
-  padding:5px 10px;
-  border-radius:6px;
-  letter-spacing:0.02em;
-  flex-shrink:0;
-}
-
 /* TRUSTED BY STRIP */
 .trusted{
   padding:18px 0 24px;
@@ -235,7 +184,7 @@ h1 .accent{color:var(--blue);}
   font-size:0.95rem;
 }
 .stat-bullet{
-  color:var(--muted);
+  color:var(--green);
   font-weight:700;
 }
 
@@ -380,21 +329,20 @@ section .accent{color:var(--blue);font-weight:700;}
   margin:6px 0 14px;
 }
 .bullets li{
-  display:flex;
-  align-items:flex-start;
-  gap:11px;
-  padding:9px 0;
+  position:relative;
+  padding:9px 0 9px 17px;
   font-size:0.95rem;
   color:#374151;
   line-height:1.6;
 }
 .bullets li::before{
   content:"";
-  flex-shrink:0;
+  position:absolute;
+  left:0;
+  top:18px;
   width:6px;height:6px;
   border-radius:50%;
   background:var(--blue);
-  margin-top:8px;
 }
 .bullets li strong{color:var(--navy);font-weight:700;}
 
@@ -451,8 +399,8 @@ footer{
 
 <nav>
   <div class="nav-left">
-    <img class="nav-logo-img" src="https://aventra-ai.com/favicon.png" alt="Aventra">
-    <span class="nav-brand">Aventra</span>
+    <img class="nav-logo-img" src="https://aventra-ai.com/favicon.png" alt="Aventra AI">
+    <span class="nav-brand">Aventra AI</span>
   </div>
 </nav>
 
@@ -470,22 +418,13 @@ footer{
 
     <div class="cta-block">
       <div class="cta-label">Start here — it's free</div>
-      <a href="https://cal.com/james-larson-cbeeva/fit-call" class="cta">Book the free 20-minute call →</a>
+      <a href="https://cal.com/james-larson-cbeeva/20-minute-fit-call" class="cta">Book the free 20-minute call →</a>
       <div class="cta-row">
         <span><span class="check">✓</span> No prep</span>
         <span><span class="check">✓</span> No pitch</span>
         <span><span class="check">✓</span> No commitment</span>
       </div>
     </div>
-
-    <a href="https://www.linkedin.com/in/jameswlarson1/" target="_blank" rel="noopener" class="founder-card">
-      <img src="https://i.imgur.com/KCMgg6k.jpeg" alt="James" class="founder-img">
-      <div class="founder-text">
-        <div class="founder-name">James</div>
-        <div class="founder-tagline">Founder, Aventra · Provo, Utah</div>
-      </div>
-      <span class="founder-linkedin">in →</span>
-    </a>
 
     <div class="trusted">
       <div class="trusted-label">Currently running automations for:</div>
@@ -532,7 +471,6 @@ footer{
       </p>
     </div>
 
-    <p style="margin-top:18px;"><strong>You don't pay anything until you've talked to me, gotten an honest answer, and decided you want the full assessment.</strong></p>
   </section>
 
   <section>
@@ -566,7 +504,7 @@ footer{
 
   <section>
     <div class="cta-label">Ready when you are</div>
-    <a href="https://cal.com/james-larson-cbeeva/fit-call" class="cta">Book the free 20-minute call →</a>
+    <a href="https://cal.com/james-larson-cbeeva/20-minute-fit-call" class="cta">Book the free 20-minute call →</a>
     <div class="cta-row">
       <span><span class="check">✓</span> Takes 2 minutes to schedule</span>
     </div>
@@ -577,7 +515,7 @@ footer{
   </section>
 
   <footer>
-    Aventra · Provo, Utah · <a href="https://aventra-ai.com" style="color:var(--muted);">aventra-ai.com</a>
+    Aventra AI · Provo, Utah · <a href="https://aventra-ai.com" style="color:var(--muted);">aventra-ai.com</a>
   </footer>
 
 </div>
