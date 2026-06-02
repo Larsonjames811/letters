@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Logan Insurance Agency — Aventra AI Assessment</title>
+
+<link rel="icon" type="image/png" href="https://aventra-ai.com/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;}
+
+:root{
+  --navy:#111827;
+  --navy2:#1f2937;
+  --blue:#2563eb;
+  --blue2:#1d4ed8;
+  --white:#ffffff;
+  --off:#f9fafb;
+  --border:#e5e7eb;
+  --muted:#6b7280;
+  --text:#111827;
+  --light-blue:#eff6ff;
+  --green:#059669;
+}
+
+body{
+  font-family:"Plus Jakarta Sans",-apple-system,BlinkMacSystemFont,sans-serif;
+  color:var(--text);
+  background:var(--white);
+  -webkit-font-smoothing:antialiased;
+  line-height:1.6;
+  font-size:16px;
+}
+
+/* NAV */
+nav{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,255,255,0.94);
+  backdrop-filter:blur(16px);
+  -webkit-backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--border);
+  height:56px;padding:0 20px;
+  display:flex;align-items:center;
+}
+.nav-left{display:flex;align-items:center;gap:9px;}
+.nav-logo-img{height:28px;width:auto;}
+.nav-brand{font-size:0.98rem;font-weight:800;color:var(--navy);letter-spacing:-0.02em;}
+
+/* PAGE */
+.page{max-width:640px;margin:0 auto;padding:0 20px;}
+
+/* HERO */
+.hero{padding:28px 0 20px;}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  background:var(--light-blue);color:var(--blue);
+  padding:5px 13px;border-radius:100px;
+  font-size:0.7rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;
+  margin-bottom:20px;
+  max-width:100%;
+}
+.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;}
+.eyebrow-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;}
+
+h1{
+  font-size:1.85rem;font-weight:800;
+  letter-spacing:-0.025em;line-height:1.16;
+  color:var(--navy);
+  margin-bottom:18px;
+  overflow-wrap:break-word;
+}
+h1 .accent{color:var(--blue);}
+
+.subhead{
+  font-size:1.05rem;
+  color:#374151;
+  line-height:1.6;
+  margin-bottom:26px;
+}
+.subhead strong{color:var(--navy);font-weight:700;}
+
+/* PRIMARY CTA BLOCK */
+.cta-block{
+  margin-bottom:28px;
+}
+.cta-label{
+  font-size:0.78rem;
+  font-weight:700;
+  letter-spacing:0.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+  margin-bottom:10px;
+}
+.cta{
+  display:block;
+  width:100%;
+  background:var(--blue);
+  color:var(--white);
+  padding:18px 24px;
+  border-radius:10px;
+  font-family:inherit;
+  font-size:1.05rem;
+  font-weight:700;
+  text-decoration:none;
+  text-align:center;
+  letter-spacing:-0.01em;
+  border:none;
+  cursor:pointer;
+  transition:background 0.15s,transform 0.1s;
+}
+.cta:hover{background:var(--blue2);}
+.cta:active{transform:scale(0.99);}
+.cta-row{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  margin-top:12px;
+  font-size:0.85rem;
+  color:var(--muted);
+  flex-wrap:wrap;
+}
+.cta-row span{display:inline-flex;align-items:center;gap:6px;}
+.check{color:var(--green);font-weight:800;}
+
+/* FOUNDER CARD (under CTA) */
+.founder-card{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:16px;
+  background:var(--off);
+  border:1px solid var(--border);
+  border-radius:12px;
+  margin-bottom:28px;
+  text-decoration:none;
+  color:inherit;
+  transition:background 0.15s, border-color 0.15s;
+}
+.founder-card:hover{
+  background:#f3f4f6;
+  border-color:#d1d5db;
+}
+.founder-img{
+  width:54px;height:54px;
+  border-radius:50%;
+  object-fit:cover;
+  object-position:center 25%;
+  border:2px solid var(--white);
+  box-shadow:0 1px 3px rgba(0,0,0,0.08);
+  flex-shrink:0;
+}
+.founder-text{flex:1;min-width:0;}
+.founder-name{
+  font-size:0.95rem;
+  font-weight:700;
+  color:var(--navy);
+  margin-bottom:2px;
+  letter-spacing:-0.01em;
+}
+.founder-tagline{
+  font-size:0.82rem;
+  color:var(--muted);
+  line-height:1.45;
+}
+.founder-linkedin{
+  font-size:0.78rem;
+  font-weight:700;
+  color:var(--blue);
+  background:var(--light-blue);
+  padding:5px 10px;
+  border-radius:6px;
+  letter-spacing:0.02em;
+  flex-shrink:0;
+}
+
+/* TRUSTED BY STRIP */
+.trusted{
+  padding:18px 0 24px;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+  margin-bottom:28px;
+}
+.trusted-label{
+  font-size:0.7rem;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  text-align:center;
+  margin-bottom:10px;
+}
+.trusted-logos{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:18px;
+  flex-wrap:wrap;
+  font-size:0.85rem;
+  color:#4b5563;
+  text-align:center;
+}
+.trusted-logos .pill{
+  padding:6px 12px;
+  background:var(--off);
+  border-radius:100px;
+  border:1px solid var(--border);
+  font-weight:600;
+  font-size:0.8rem;
+  color:#4b5563;
+}
+.trusted-stats{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+  font-size:0.85rem;
+  color:#4b5563;
+  flex-wrap:wrap;
+}
+.stat-divider{display:none;}
+.stat-item strong{
+  color:var(--navy);
+  font-weight:800;
+  font-size:0.95rem;
+}
+.stat-bullet{
+  color:var(--green);
+  font-weight:700;
+}
+
+/* SECTIONS */
+section{
+  padding:32px 0;
+  border-top:1px solid var(--border);
+}
+.section-label{
+  font-size:0.72rem;
+  font-weight:700;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--blue);
+  margin-bottom:12px;
+}
+.section-title{
+  font-size:1.35rem;
+  font-weight:800;
+  letter-spacing:-0.02em;
+  line-height:1.25;
+  color:var(--navy);
+  margin-bottom:14px;
+}
+section p{
+  font-size:0.97rem;
+  color:#374151;
+  line-height:1.7;
+  margin-bottom:14px;
+}
+section p:last-child{margin-bottom:0;}
+section .accent{color:var(--blue);font-weight:700;}
+
+/* TWO-STEP FUNNEL BOXES */
+.step-box{
+  background:var(--off);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:20px;
+  margin:14px 0 4px;
+}
+.step-header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+  padding-bottom:10px;
+  border-bottom:1px solid var(--border);
+}
+.step-num{
+  display:inline-block;
+  background:var(--blue);
+  color:var(--white);
+  font-size:0.7rem;
+  font-weight:800;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  padding:4px 9px;
+  border-radius:6px;
+  flex-shrink:0;
+}
+.step-title{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--navy);
+  letter-spacing:-0.01em;
+  flex:1;
+  min-width:0;
+}
+.step-cost{
+  font-size:1.05rem;
+  font-weight:800;
+  color:var(--navy);
+  letter-spacing:-0.02em;
+  margin-left:auto;
+}
+.step-body{
+  font-size:0.95rem;
+  color:#374151;
+  line-height:1.65;
+  margin:0;
+}
+.step-arrow{
+  text-align:center;
+  font-size:1.5rem;
+  color:var(--muted);
+  font-weight:700;
+  line-height:1;
+  margin:8px 0;
+}
+@media (min-width:640px){
+  .step-box{padding:24px;}
+  .step-title{font-size:1.1rem;}
+  .step-cost{font-size:1.15rem;}
+  .step-body{font-size:1rem;}
+}
+
+/* THE OFFER BOX */
+.offer-box{
+  background:var(--off);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:22px;
+  margin:18px 0 4px;
+}
+.offer-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  padding:10px 0;
+  border-bottom:1px solid var(--border);
+}
+.offer-row:last-of-type{border-bottom:none;}
+.offer-row .label{
+  font-size:0.92rem;
+  color:#4b5563;
+  font-weight:500;
+}
+.offer-row .value{
+  font-size:1rem;
+  font-weight:700;
+  color:var(--navy);
+  letter-spacing:-0.01em;
+  text-align:right;
+}
+.offer-row .value-blue{color:var(--blue);}
+.guarantee-line{
+  margin-top:14px;
+  padding-top:14px;
+  border-top:1px solid var(--border);
+  font-size:0.9rem;
+  color:#4b5563;
+  line-height:1.6;
+}
+.guarantee-line strong{color:var(--navy);font-weight:700;}
+
+/* LISTS */
+.bullets{
+  list-style:none;
+  padding:0;
+  margin:6px 0 14px;
+}
+.bullets li{
+  position:relative;
+  padding:9px 0 9px 17px;
+  font-size:0.95rem;
+  color:#374151;
+  line-height:1.6;
+}
+.bullets li::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:18px;
+  width:6px;height:6px;
+  border-radius:50%;
+  background:var(--blue);
+}
+.bullets li strong{color:var(--navy);font-weight:700;}
+
+/* PS */
+.ps{
+  margin-top:22px;
+  padding:18px 20px;
+  background:var(--off);
+  border-radius:10px;
+  font-size:0.92rem;
+  font-style:italic;
+  color:#4b5563;
+  line-height:1.7;
+}
+.ps strong{color:var(--navy);font-weight:700;font-style:normal;}
+
+/* FOOTER */
+footer{
+  padding:28px 0 40px;
+  border-top:1px solid var(--border);
+  text-align:center;
+  font-size:0.78rem;
+  color:var(--muted);
+  margin-top:8px;
+}
+
+/* iOS safe area */
+@supports (padding:max(0px)){
+  .page, nav{
+    padding-left:max(20px,env(safe-area-inset-left));
+    padding-right:max(20px,env(safe-area-inset-right));
+  }
+}
+
+/* Wider viewports */
+@media (min-width:640px){
+  .hero{padding:48px 0 28px;}
+  h1{font-size:2.3rem;line-height:1.12;margin-bottom:22px;}
+  .subhead{font-size:1.15rem;margin-bottom:30px;}
+  .cta{padding:19px 28px;font-size:1.08rem;}
+  section{padding:44px 0;}
+  .section-title{font-size:1.55rem;margin-bottom:16px;}
+  section p{font-size:1rem;}
+  .bullets li{font-size:1rem;padding:10px 0;}
+  .offer-box{padding:26px;}
+}
+
+@media (min-width:900px){
+  h1{font-size:2.6rem;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-left">
+    <img class="nav-logo-img" src="https://aventra-ai.com/favicon.png" alt="Aventra AI">
+    <span class="nav-brand">Aventra AI</span>
+  </div>
+</nav>
+
+<div class="page">
+
+  <header class="hero">
+    <div class="eyebrow">
+      <span class="eyebrow-dot"></span>
+      <span class="eyebrow-text">Prepared for <span class="accent">Logan Insurance Agency</span></span>
+    </div>
+
+    <h1><span class="accent">Samuel</span>, here's what we'd actually do for <span class="accent">Logan Insurance</span>.</h1>
+
+    <p class="subhead">We assess your workflows — ACORD prep, after-hours calls, renewal follow-up, COIs — quantify the cost in hours and dollars, and hand you a report with a prioritized action plan in 48 hours. <strong>No software to buy. No platform to manage.</strong></p>
+
+    <div class="cta-block">
+      <div class="cta-label">Start here — it's free</div>
+      <a href="https://cal.com/james-larson-cbeeva/20-minute-fit-call" class="cta">Book the free 20-minute call →</a>
+      <div class="cta-row">
+        <span><span class="check">✓</span> No prep</span>
+        <span><span class="check">✓</span> No pitch</span>
+        <span><span class="check">✓</span> No commitment</span>
+      </div>
+    </div>
+
+    <a href="https://www.linkedin.com/in/jameswlarson1/" target="_blank" rel="noopener" class="founder-card">
+      <img src="https://i.imgur.com/KCMgg6k.jpeg" alt="James Larson" class="founder-img">
+      <div class="founder-text">
+        <div class="founder-name">James Larson</div>
+        <div class="founder-tagline">Founder, Aventra AI · Provo, Utah</div>
+      </div>
+      <span class="founder-linkedin">in →</span>
+    </a>
+
+    <div class="trusted">
+      <div class="trusted-label">Currently running automations for:</div>
+      <div class="trusted-logos">
+        <span class="pill">GNL Heating & Cooling</span>
+        <span class="pill">Utah Air Ducts</span>
+        <span class="pill">Park City Peaks Snowmobiling</span>
+        <span class="pill">+ 3 more Utah companies</span>
+      </div>
+      <div class="trusted-stats">
+        <span class="stat-divider"></span>
+        <span class="stat-item"><strong>400+</strong> calls/month</span>
+        <span class="stat-bullet">•</span>
+        <span class="stat-item"><strong>80+</strong> leads captured</span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-label">How this works</div>
+    <p>Two steps. The first is free. The second only happens if you want it.</p>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">Step 1</span>
+        <span class="step-title">Free 20-minute fit call</span>
+        <span class="step-cost">$0</span>
+      </div>
+      <p class="step-body">
+        No prep. I ask where <span class="accent">Logan Insurance</span> is at today — what's working, what's stacking up, where the manual work lives. I tell you honestly whether there's enough opportunity to be worth a deeper look. If not, you keep your 20 minutes.
+      </p>
+    </div>
+
+    <div class="step-arrow">↓</div>
+
+    <div class="step-box">
+      <div class="step-header">
+        <span class="step-num">Step 2</span>
+        <span class="step-title">Paid assessment</span>
+        <span class="step-cost">$2,500</span>
+      </div>
+      <p class="step-body">
+        Full workflow assessment, report with a prioritized action plan in 48 hours. Named tools, hours saved per workflow, and total annual value. Guarantee: if we can't find $12,500+ in annual value, your fee is refunded — or credited toward implementation.
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <div class="section-label">What's in the Step 2 report</div>
+    <ul class="bullets">
+      <li>The specific workflows at <span class="accent">Logan Insurance</span> costing the most staff time right now</li>
+      <li>The exact tools we'd use to fix each one — named, not vague</li>
+      <li>Hours-per-week and dollar estimates so you can prioritize</li>
+      <li>A clear implementation path if you want it. A clean exit if you don't.</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">Where AI usually pays off at independent agencies</div>
+    <p>We're not guessing. These are the workflows that consistently turn out to be the biggest time and money drains:</p>
+    <ul class="bullets">
+      <li><strong>ACORD form prep</strong> — manual entry in Applied Epic or AMS360 eating 3–4 hours per submission</li>
+      <li><strong>After-hours quote requests</strong> — hitting voicemail and losing to the agency that called back in 5 minutes</li>
+      <li><strong>COI generation</strong> — CSRs stuck on certificate requests when most of it can run on its own</li>
+      <li><strong>Renewal follow-up</strong> — inconsistent because it depends on someone remembering</li>
+      <li><strong>Carrier portal re-entry</strong> — same data typed twice because the AMS and the portal don't sync</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-label">Why trust us</div>
+    <p>I build automations for owner-operated Utah companies. Six are running right now — handling <strong>400+ inbound calls per month</strong> and capturing <strong>80+ leads per month</strong> that were previously dying in voicemail.</p>
+    <p>Independent insurance agencies have the same operational patterns: high inbound volume, manual data work, after-hours lead leakage, repetitive paperwork. The tools are the same. The methodology is the same.</p>
+    <p>That's why the guarantee exists. If I can't find $12,500 in annual value at <span class="accent">Logan Insurance</span>, you don't pay.</p>
+  </section>
+
+  <section>
+    <div class="cta-label">Ready when you are</div>
+    <a href="https://cal.com/james-larson-cbeeva/20-minute-fit-call" class="cta">Book the free 20-minute call →</a>
+    <div class="cta-row">
+      <span><span class="check">✓</span> Takes 2 minutes to schedule</span>
+    </div>
+
+    <div class="ps">
+      <strong>P.S.</strong> The 20-minute call is genuinely just a fit check. I'll ask about <span class="accent">Logan Insurance</span>'s biggest workflow headaches and tell you honestly whether I think the assessment makes sense. If it doesn't fit, I'll tell you that. I only want to work with agencies where this is a clear win.
+    </div>
+  </section>
+
+  <footer>
+    Aventra AI · Provo, Utah · <a href="https://aventra-ai.com" style="color:var(--muted);">aventra-ai.com</a>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var SLUG="logan-insurance-agency";
+  var TRACKER="https://script.google.com/macros/s/AKfycbwelusD6fC4mhTzBsYDjvoUNokgc2pKGtKoA8VLv3eeKhIgi6g5WR121YJ4R8bwpn1bfg/exec";
+  function ping(event){
+    if(!TRACKER||TRACKER.indexOf("{{")===0)return;
+    new Image().src=TRACKER+"?prospect="+encodeURIComponent(SLUG)+"&event="+encodeURIComponent(event)+"&t="+Date.now();
+  }
+  ping("view");
+  document.querySelectorAll(".cta").forEach(function(cta){
+    cta.addEventListener("click",function(e){
+      var href=this.href;
+      if(!href||href==="#")return;
+      e.preventDefault();
+      ping("cta_click");
+      setTimeout(function(){window.location.href=href;},250);
+    });
+  });
+})();
+</script>
+</body>
+</html>
